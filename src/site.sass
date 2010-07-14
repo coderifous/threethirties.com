@@ -1,0 +1,32 @@
+@import "compass/reset"
+@import "compass/utilities"
+@import "compass/css3"
+
+$subdued_color: #666
+$accent_color: #009BD6
+$highlight_color: #D40098
+
+body
+  background: #fff
+  color: #111
+  font-family: 'Josefin Sans Std Light', arial, serif
+  font-size: 40px
+  line-height: 50px
+  a
+    color: $accent_color
+    +hover-link
+
+#site
+  +clearfix
+  padding: 10px
+  width: 400px
+  margin: 10px auto
+  .headshot
+    width: 200px
+  .intro
+    margin-bottom: 30px
+    line-height: 20px
+    font-size: 18px
+    strong
+      color: $highlight_color
+
