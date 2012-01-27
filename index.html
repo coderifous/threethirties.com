@@ -3,14 +3,10 @@
   <head>
     <title>Three Thirties</title>
     <link href='/stylesheets/site.css' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css' />
   </head>
   <body>
-    <div id='site'>
-      <p class='intro'>
-        <strong>Working Software</strong>
-        is the primary measure of progress.
-      </p>
+    <div id='sticky'>
       <div class='info'>
         <h1>Three Thirties</h1>
         <h2>Jim Garvin</h2>
@@ -25,7 +21,168 @@
           <li>
             <a href='tel:571-249-3930'>571-249-3X30</a>
           </li>
+          <li>
+            <a href='http://www.thegarvin.com/'>my blog</a>
+          </li>
+          <li>
+            <a href='https://github.com/coderifous'>my github</a>
+          </li>
         </ul>
+      </div>
+    </div>
+    <div id='site'>
+      <p class='intro'>
+        <strong>Working Software</strong>
+        is the primary measure of progress.
+      </p>
+      <div class='summary'>
+        <p>
+          I'm a software developer & consultant based in Leesburg, VA.
+          I've been programming since I was 8 years old, and I've been helping
+          businesses build software professionally for the past 11 years.  My focus
+          is on building working software, the right way.
+        </p>
+        <p>
+          A few interesting companies I've started and projects I've worked on
+          are listed below.  If you've got a project that you'd like to work with
+          me on, please
+          <a href="mailto:jim@threethirties.com?subject=I've got a project that could use your help...">email me.</a>
+        </p>
+      </div>
+      <div class='portfolio'>
+        <div class='project'>
+          <div class='title'>
+            <a href='http://busyconf.com'>BusyConf &rArr;</a>
+          </div>
+          <div class='description'>
+            <p>
+              BusyConf is a bootstrapped company that I started with a partner
+              in 2010.  It's a SaaS that helps conference organizers put on
+              conferences.  Conference organizers can run
+              <a href='https://spreeconf2012.busyconf.com/bookings/new'>ticket registration</a>
+              and
+              <a href='https://rubynation2012.busyconf.com/proposals/new'>call for proposals</a>
+              through the platform, and
+              <a href='http://rubyconf2011.busyconf.com/schedule/full'>publish schedules</a>
+              that are optimized for mobile, tablet, and desktop browsers.
+            </p>
+          </div>
+          <ul class='tech-highlights'>
+            <li>ruby, rails</li>
+            <li>mongodb</li>
+            <li>coffeescript</li>
+          </ul>
+        </div>
+        <div class='project'>
+          <div class='title'>
+            <a href='http://lmgtfy.com/'>Let Me Google That For You &rArr;</a>
+          </div>
+          <div class='description'>
+            LMGTFY is a popular internet meme and website that helps people
+            answer questions that should've just been googled.  Interesting
+            components include a
+            <a href='http://live.lmgtfy.com'>live feed</a>
+            of searches going through the site,
+            and a Living Social affiliates ad server proxy to serve targeted
+            deals based on geo-ip lookup.  Revenue comes from
+            <a href='http://buysellads.com/buy/detail/30626'>ads</a>
+            ,
+            <a href='http://itunes.apple.com/us/app/lmgtfy-official/id488551684?mt=8'>iOS app sales</a>
+            , and also
+            <a href='http://lmgtfy.com/stickers.html'>sticker sales</a>
+            .
+          </div>
+          <ul class='tech-highlights'>
+            <li>static haml, sass</li>
+            <li>
+              translated into ~60 languages using
+              <a href='https://github.com/coderifous/jquery-localize'>jquery.localize</a>
+            </li>
+            <li>>100k unique visitors every day</li>
+          </ul>
+        </div>
+        <div class='project'>
+          <div class='title'>
+            <a href='http://www.smallact.com/software/thrive/'>Thrive &rArr;</a>
+          </div>
+          <div class='description'>
+            Thrive is social CRM software targeted for use by non-profit
+            organizations.  It helps them nurture key relationships to get
+            members, donations and advocates through social media.
+          </div>
+          <ul class='tech-highlights'>
+            <li>ruby, rails</li>
+            <li>mysql + mongodb</li>
+            <li>heavy use of asyncronous & scheduled jobs</li>
+          </ul>
+        </div>
+        <div class='project'>
+          <div class='title'>
+            <a href='http://www.smallact.com/software/profile-builder/'>Profile Builder &rArr;</a>
+          </div>
+          <div class='description'>
+            Profile Builder is a system that processes email lists and produces
+            detailed social profiles, enhancing CRM databases and improving
+            success rate in getting major gifts from key supporters.
+          </div>
+          <ul class='tech-highlights'>
+            <li>ruby, rails</li>
+            <li>mongodb</li>
+            <li>heavy API processing</li>
+          </ul>
+        </div>
+        <div class='project'>
+          <div class='title'>
+            <a href='http://onthegoalerting.com/'>On-The-Go Alerting &rArr;</a>
+          </div>
+          <div class='description'>
+            Billed as "The
+            <a href='http://itunes.apple.com/us/app/on-the-go-alerting/id453816341?mt=8'>iPad App</a>
+            for sending emergency alerts", it's a
+            commercial service that provides access to the various Federal
+            emergency alert systems.
+          </div>
+          <ul class='tech-highlights'>
+            <li>ruby, rails</li>
+            <li>postgresql</li>
+            <li>geospatial data</li>
+            <li>XML-SOAP interoperation, including XML-SIG.</li>
+          </ul>
+        </div>
+        <div class='project'>
+          <div class='title'>
+            <a href='http://customink.com/'>Custom Ink &rArr;</a>
+          </div>
+          <div class='description'>
+            Custom Ink is the #1 online custom T-Shirt service.  Visitors can
+            choose from hundreds of products, and create custom designs in an
+            online lab.  The orders are fulfilled and shipped by Custom Ink.  I
+            helped Custom Ink by automating, streamlining, and building visibility into the order
+            fulfillment process, overhauling their order queue system and UI, and
+            laying the groundwork for a transition from Big Ball of Mud to SOA.
+          </div>
+          <ul class='tech-highlights'>
+            <li>ruby, rails</li>
+            <li>oracle, couchdb</li>
+            <li>SOA</li>
+          </ul>
+        </div>
+        <div class='project'>
+          <div class='title'>Mobile Discovery</div>
+          <div class='description'>
+            Mobile Discovery was an early endeavor to link physical ads with the
+            mobile world through QR codes.  It was billed to marketing agencies
+            as an ad campaign management and anaylitics platform, and consumers
+            as a way to manage privacy and more easily connect to interesting
+            content.
+          </div>
+          <ul class='tech-highlights'>
+            <li>ruby, rails</li>
+            <li>facebook app</li>
+            <li>netbiscuits proxy (for mobile device content tailoring)</li>
+            <li>MXTelecom integration (SMS gateway integration)</li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

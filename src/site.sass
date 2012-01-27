@@ -7,26 +7,67 @@ $accent_color: #009BD6
 $highlight_color: #D40098
 
 body
-  background: #fff
+  background: url(/linen.png) #eee
   color: #111
-  font-family: 'Josefin Sans Std Light', arial, serif
-  font-size: 40px
-  line-height: 50px
+  // font-family: 'Josefin Sans Std Light', arial, serif
+  font-family: 'Josefin Sans', arial, serif
+  font-size: 32px
+  line-height: 48px
   a
     color: $accent_color
     +hover-link
 
+#sticky
+  position: fixed
+  top: 0
+  left: 0
+
 #site
+  position: relative
+  padding: 10px 0
+  width: 500px
+  margin-left: 320px
   +clearfix
-  padding: 10px
-  width: 400px
-  margin: 10px auto
-  .headshot
-    width: 200px
-  .intro
-    margin-bottom: 30px
-    line-height: 20px
-    font-size: 18px
-    strong
+
+.headshot
+  width: 200px
+  +border-radius(10px)
+
+.intro, .info, .summary, .project
+  padding: 0 20px
+  margin: 24px 0
+
+.intro
+  margin-bottom: 30px
+  line-height: 24px
+  font-size: 20px
+  strong
+    color: $highlight_color
+
+.summary p
+  font-size: 20px
+  line-height: 32px
+  margin: 20px 0
+
+.portfolio
+  font-size: 20px
+  line-height: 32px
+
+.project
+  background: url(/linen.png) #fff
+  padding: 20px
+  +border-radius(10px)
+  .title
+    font-weight: bold
+    a
       color: $highlight_color
+  .description
+    font-size: 18px
+  .tech-highlights li
+    font-size: 18px
+    color: #666
+    display: inline-block
+    +single-text-shadow(lighten(#eee, 20%), 1px, 1px)
+    &:after
+      content: "; "
 
