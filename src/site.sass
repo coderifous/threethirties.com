@@ -17,10 +17,17 @@ body
     color: $accent_color
     +hover-link
 
-#sticky
-  position: fixed
-  top: 0
-  left: 0
+@media screen and (min-device-width: 481px)
+  #sticky
+    position: fixed
+    top: 0
+    left: 0
+
+@media screen and (max-device-width: 480px)
+  #sticky
+    position: absolute
+    top: 0
+    left: 0
 
 #site
   position: relative

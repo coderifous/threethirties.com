@@ -81,14 +81,23 @@ body a:hover {
   text-decoration: underline;
 }
 
-/* line 20, ../src/site.sass */
-#sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
+@media screen and (min-device-width: 481px) {
+  /* line 21, ../src/site.sass */
+  #sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
-
-/* line 25, ../src/site.sass */
+@media screen and (max-device-width: 480px) {
+  /* line 27, ../src/site.sass */
+  #sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* line 32, ../src/site.sass */
 #site {
   position: relative;
   padding: 10px 0;
@@ -98,7 +107,7 @@ body a:hover {
   *zoom: 1;
 }
 
-/* line 32, ../src/site.sass */
+/* line 39, ../src/site.sass */
 .headshot {
   width: 200px;
   -moz-border-radius: 10px;
@@ -109,37 +118,37 @@ body a:hover {
   border-radius: 10px;
 }
 
-/* line 36, ../src/site.sass */
+/* line 43, ../src/site.sass */
 .intro, .info, .summary, .project {
   padding: 0 20px;
   margin: 24px 0;
 }
 
-/* line 40, ../src/site.sass */
+/* line 47, ../src/site.sass */
 .intro {
   margin-bottom: 30px;
   line-height: 24px;
   font-size: 18px;
 }
-/* line 44, ../src/site.sass */
+/* line 51, ../src/site.sass */
 .intro strong {
   color: #d40098;
 }
 
-/* line 47, ../src/site.sass */
+/* line 54, ../src/site.sass */
 .summary p {
   font-size: 18px;
   line-height: 32px;
   margin: 20px 0;
 }
 
-/* line 52, ../src/site.sass */
+/* line 59, ../src/site.sass */
 .portfolio {
   font-size: 20px;
   line-height: 32px;
 }
 
-/* line 56, ../src/site.sass */
+/* line 63, ../src/site.sass */
 .project {
   background: url(/linen.png) white;
   padding: 20px;
@@ -150,26 +159,26 @@ body a:hover {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 60, ../src/site.sass */
+/* line 67, ../src/site.sass */
 .project .title {
   font-weight: bold;
 }
-/* line 62, ../src/site.sass */
+/* line 69, ../src/site.sass */
 .project .title a {
   color: #d40098;
 }
-/* line 64, ../src/site.sass */
+/* line 71, ../src/site.sass */
 .project .description {
   font-size: 18px;
 }
-/* line 66, ../src/site.sass */
+/* line 73, ../src/site.sass */
 .project .tech-highlights li {
   font-size: 18px;
   color: #666666;
   display: inline-block;
   text-shadow: white 1px 1px 1px;
 }
-/* line 71, ../src/site.sass */
+/* line 78, ../src/site.sass */
 .project .tech-highlights li:after {
   content: "; ";
 }
