@@ -1,2 +1,6 @@
 Website for threethirties.com
 
+Includes resume and stuff.
+
+quickstart:
+jekyll serve --watch
