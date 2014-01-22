@@ -3,10 +3,10 @@
 !!! Strict
 %html
   %head
-    %title Jim Garvin | Web Application Developer | Rails Developer | Northern VA
+    %title Jim Garvin | Software Developer | Consultant | Web Application Developer | Rails Developer | Northern VA
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
-    %meta{:content => "ruby, rails, web application, consultant, developer, dc, nova, northern va", :name => "keywords"}/
-    %meta{:content => "Jim Garvin's Resumé.  Jim is a Web Application Developer with extensive Ruby on Rails experience.", :name => "description"}/
+    %meta{:content => "ruby, rails, software, programmer, web application, consultant, contractor, developer, dc, nova, northern va", :name => "keywords"}/
+    %meta{:content => "Jim Garvin's Resumé.  Jim is a Software Developer with extensive experience building Web Applications using Ruby on Rails.", :name => "description"}/
     %link{:href => "http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "resume.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
   %body
@@ -16,7 +16,7 @@
           .yui-gc
             .yui-u.first
               %h1 Jim Garvin
-              %h2 Web Application Developer
+              %h2 Software Developer &amp; Consultant
             .yui-u
               .contact-info.screen-only
                 %a{ :href => "http://twitter.com/coderifous/" }<
@@ -47,7 +47,7 @@
                     Programming since the age of
                     <a href="http://en.wikipedia.org/wiki/Commodore_64">8</a>,
                     and helping businesses build software professionally for the
-                    past 11 years.  His focus is on building working software,
+                    past <span id="experience">14</span> years.  His focus is on building working software,
                     <a href="http://agilemanifesto.org/">the right way</a>.
               .yui-gf
                 .yui-u.first
@@ -56,9 +56,10 @@
                   .talent
                     %h2 Full Stack Dev
                     %p
-                      Builds rock solid systems with emphasis on clean code,
-                      workflow automation, and TDD.  Deep experience from the
-                      bottom of the database to the top of the stylesheets.
+                      Builds rock solid systems with emphasis on clean code, low
+                      maintenance, workflow automation, and TDD.  Deep
+                      experience from the bottom of the database to the top of
+                      the stylesheets.
                   .talent
                     %h2 User Experience
                     %p
@@ -78,20 +79,20 @@
                   %h2 Technical
                 .yui-u
                   %ul.talent
-                    %li Ruby, Rails
-                    %li Coffeescript
-                    %li Haml, Sass
-                    %li.last MongoDB
+                    %li Ruby, Rails, Sinatra
+                    %li Javascript, Coffeescript
+                    %li jQuery, Angular, Raphael
+                    %li.last Haml, Slim, Sass, Compass
                   %ul.talent
-                    %li Sinatra
-                    %li Javascript
-                    %li HTML5, CSS3
-                    %li.last Mysql, Postgresql
+                    %li Elixir, Cowboy
+                    %li HTML5, CSS3, Bootstrap
+                    %li Postgresql, MySQL, Oracle
+                    %li.last MongoDB, Sqlite
                   %ul.talent
-                    %li jQuery, Angular
-                    %li Git, Subversion
-                    %li Mac OS X
-                    %li.last Linux, Unix
+                    %li Node, Yeoman, Bower
+                    %li Git, Hg, Subversion, CVS
+                    %li Nginx, Apache
+                    %li.last Mac OS X, Linux, Unix
               .yui-gf.last
                 .yui-u.first
                   %h2 Experience
@@ -166,6 +167,18 @@
                       for billions of dollars worth of property distributed in
                       warehouses for emergency deployment.
 
+                  .job
+                    %h2 Cubenot
+                    %h3 Co-Founder and Developer
+                    %h4 2005-2010
+                    %p
+                      Cubenot was an exploratory bootstrapped company that Jim
+                      started with a partner in 2005.  They developed several
+                      major iterations of enterprise requirements management
+                      systems, launched under the trademarked name SamePage.
+                      The prototype was developed using Perl, and subsequent
+                      versions were developed using Ruby on Rails.
+
                   .job.last
                     %h2 Raytheon, Titan, BAE Systems, General Dynamics, L3
                     %h3 Software Engineer
@@ -195,3 +208,9 @@
             Jim Garvin &mdash;
             %a{:href => "mailto:jim@threethirties.com"} jim@threethirties.com
             \&mdash; (571) - 249-3930
+
+    %script
+      var year_started = 2000;
+      years_experience = (new Date()).getFullYear() - year_started;
+      var e = document.getElementById("experience");
+      e.innerText = years_experience;

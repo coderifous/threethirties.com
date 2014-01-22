@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jim Garvin | Web Application Developer | Rails Developer | Northern VA</title>
+    <title>Jim Garvin | Software Developer | Consultant | Web Application Developer | Rails Developer | Northern VA</title>
     <meta content='text/html; charset=utf-8' http-equiv='content-type'>
-    <meta content='ruby, rails, web application, consultant, developer, dc, nova, northern va' name='keywords'>
-    <meta content="Jim Garvin's Resumé.  Jim is a Web Application Developer with extensive Ruby on Rails experience." name='description'>
+    <meta content='ruby, rails, software, programmer, web application, consultant, contractor, developer, dc, nova, northern va' name='keywords'>
+    <meta content="Jim Garvin's Resumé.  Jim is a Software Developer with extensive experience building Web Applications using Ruby on Rails." name='description'>
     <link href='http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css' media='all' rel='stylesheet' type='text/css'>
     <link href='resume.css' media='all' rel='stylesheet' type='text/css'>
   </head>
@@ -15,7 +15,7 @@
           <div class='yui-gc'>
             <div class='yui-u first'>
               <h1>Jim Garvin</h1>
-              <h2>Web Application Developer</h2>
+              <h2>Software Developer &amp; Consultant</h2>
             </div>
             <div class='yui-u'>
               <div class='contact-info screen-only'>
@@ -51,7 +51,7 @@
                     Programming since the age of
                     <a href="http://en.wikipedia.org/wiki/Commodore_64">8</a>,
                     and helping businesses build software professionally for the
-                    past 11 years.  His focus is on building working software,
+                    past <span id="experience">14</span> years.  His focus is on building working software,
                     <a href="http://agilemanifesto.org/">the right way</a>.
                   </p>
                 </div>
@@ -64,9 +64,10 @@
                   <div class='talent'>
                     <h2>Full Stack Dev</h2>
                     <p>
-                      Builds rock solid systems with emphasis on clean code,
-                      workflow automation, and TDD.  Deep experience from the
-                      bottom of the database to the top of the stylesheets.
+                      Builds rock solid systems with emphasis on clean code, low
+                      maintenance, workflow automation, and TDD.  Deep
+                      experience from the bottom of the database to the top of
+                      the stylesheets.
                     </p>
                   </div>
                   <div class='talent'>
@@ -95,22 +96,22 @@
                 </div>
                 <div class='yui-u'>
                   <ul class='talent'>
-                    <li>Ruby, Rails</li>
-                    <li>Coffeescript</li>
-                    <li>Haml, Sass</li>
-                    <li class='last'>MongoDB</li>
+                    <li>Ruby, Rails, Sinatra</li>
+                    <li>Javascript, Coffeescript</li>
+                    <li>jQuery, Angular, Raphael</li>
+                    <li class='last'>Haml, Slim, Sass, Compass</li>
                   </ul>
                   <ul class='talent'>
-                    <li>Sinatra</li>
-                    <li>Javascript</li>
-                    <li>HTML5, CSS3</li>
-                    <li class='last'>Mysql, Postgresql</li>
+                    <li>Elixir, Cowboy</li>
+                    <li>HTML5, CSS3, Bootstrap</li>
+                    <li>Postgresql, MySQL, Oracle</li>
+                    <li class='last'>MongoDB, Sqlite</li>
                   </ul>
                   <ul class='talent'>
-                    <li>jQuery, Angular</li>
-                    <li>Git, Subversion</li>
-                    <li>Mac OS X</li>
-                    <li class='last'>Linux, Unix</li>
+                    <li>Node, Yeoman, Bower</li>
+                    <li>Git, Hg, Subversion, CVS</li>
+                    <li>Nginx, Apache</li>
+                    <li class='last'>Mac OS X, Linux, Unix</li>
                   </ul>
                 </div>
               </div>
@@ -194,6 +195,19 @@
                       warehouses for emergency deployment.
                     </p>
                   </div>
+                  <div class='job'>
+                    <h2>Cubenot</h2>
+                    <h3>Co-Founder and Developer</h3>
+                    <h4>2005-2010</h4>
+                    <p>
+                      Cubenot was an exploratory bootstrapped company that Jim
+                      started with a partner in 2005.  They developed several
+                      major iterations of enterprise requirements management
+                      systems, launched under the trademarked name SamePage.
+                      The prototype was developed using Perl, and subsequent
+                      versions were developed using Ruby on Rails.
+                    </p>
+                  </div>
                   <div class='job last'>
                     <h2>Raytheon, Titan, BAE Systems, General Dynamics, L3</h2>
                     <h3>Software Engineer</h3>
@@ -227,5 +241,11 @@
         </div>
       </div>
     </div>
+    <script>
+      var year_started = 2000;
+      years_experience = (new Date()).getFullYear() - year_started;
+      var e = document.getElementById("experience");
+      e.innerText = years_experience;
+    </script>
   </body>
 </html>
